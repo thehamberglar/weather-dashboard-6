@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container-fluid">
+            <div class="row page-content">
+                <div>
+                    <div class="form-container">
+                        <form id="search-form">
+                            <div>
+                                <label for="search-input" class="search-label m-0 text-dark">Search for a City:</label>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <input type="text" id="search-input" name="search-input" class="search-input rounded">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn bg-primary rounded search-button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="search-history-container" class="row m-0 search-history-container">
+  
+                    </div>
+                </div>
+    
+                <div>
+                    <div id="weather-container">
+                        <div class="title-container">
+                            <h2 id="title" class="title d-inline"></h2>
+                            <img id="weather-icon" class="d-inline" src="" alt="">
+                        </div>
+                        <p class="temperature" id="temperature"></p>
+                        <p class="humidity" id="humidity"></p>
+                        <p class="wind-speed" id="wind-speed"></p>
+                        <p class="uv-index" id="uv-index"></p>
+                        <p class="number rounded" id="number"></p>
+                    </div>
+                    <div>
+                        <h2 class="future-forecast-title" id="future-forecast-title"></h2>
+                        <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
+                            <div class="future-card bg-primary rounded">
+                                <p class="future-date" id="future-date-1"></p>
+                                <img id="future-icon-1" src="" alt="">
+                                <p class="future-temp" id="future-temp-1"></p>
+                                <p class="future-humidity" id="future-humidity-1"></p>
+                            </div>
+                            <div>
+                                <p class="future-date" id="future-date-2"></p>
+                                <img id="future-icon-2" src="" alt="">
+                                <p class="future-temp" id="future-temp-2"></p>
+                                <p class="future-humidity" id="future-humidity-2"></p>
+                            </div>
+                            <div>
+                                <p class="future-date" id="future-date-3"></p>
+                                <img id="future-icon-3" src="" alt="">
+                                <p class="future-temp" id="future-temp-3"></p>
+                                <p class="future-humidity" id="future-humidity-3"></p>
+                            </div>
+                            <div>
+                                <p class="future-date" id="future-date-4"></p>
+                                <img id="future-icon-4" src="" alt="">
+                                <p class="future-temp" id="future-temp-4"></p>
+                                <p class="future-humidity" id="future-humidity-4"></p>
+                            </div>
+                            <div>
+                                <p class="future-date" id="future-date-5"></p>
+                                <img id="future-icon-5" src="" alt="">
+                                <p class="future-temp" id="future-temp-5"></p>
+                                <p class="future-humidity" id="future-humidity-5"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/js/script.js"></script>
+    
+</body>
+</html>
